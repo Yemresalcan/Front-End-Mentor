@@ -1,0 +1,258 @@
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+    src: url('./assets/fonts/Roboto-Bold.ttf');
+  }
+  *, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: var(--Font-size);
+  }
+  :root {
+    /* Colors 
+      Primary*/
+    --Tomato: hsl(4, 100%, 67%);
+    /* Colors
+      Neutral */
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+  
+    --Font-size: 14px;
+  
+    --padding: 20px;
+  
+    --cont-height: 600px;
+  
+    --transition-speed: 500ms;
+    /* The designs were created to the following widths:
+    - Mobile: 375px
+    - Desktop: 1440px */
+  }
+  body {
+    min-height: 100vh;
+    color: var(--Dark-Slate-Grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Slate-Grey);
+    padding: 10px;
+  }
+  .container {
+    position: relative;
+    display: flex;
+    height: min(100vh, var(--cont-height));
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--White);
+    overflow: hidden;
+    border-radius: 2rem;
+    padding: var(--padding);
+    opacity: 1;
+    z-index: 1;
+    transition: var(--transition-speed);
+  }
+  .container.showOff {
+    opacity: 0;
+    z-index: 0;
+  }
+  .hero-image {
+    background-image: url("./assets/images/illustration-sign-up-mobile.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: stretch;
+    height: calc(.4 * min(var(--cont-height), 100vh));
+    border-radius: 1rem;
+  }
+  .hero-text {
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero-text h1, .thanks-msg h2 {
+    font-weight: 700;
+    font-size: calc(2.125 * var(--Font-size));
+  }
+  .hero-text ul {
+    --padding: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: var(--padding);
+  }
+  .hero-text ul li {
+    position: relative;
+  }
+  .hero-text ul li::before {
+    --padding: 30px;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-image: url(./assets/images/icon-list.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: calc(-1 * var(--padding));
+    transform: translate(0, -50%);
+  }
+  .hero-text form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .hero-text label {
+    font-weight: 700;
+    font-size: calc(.9 * var(--Font-size));
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    position: relative;
+  }
+  
+  .hero-text form input, .hero-text form button, .thanks-msg button  {
+    all: unset;
+    padding: 10px 20px;
+    border-radius: .5rem;
+  }
+  .hero-text form input {
+    background-color: var(--White);
+    border: 1px solid var(--Grey);
+  }
+  .hero-text form input::placeholder {
+    color: var(--Grey);
+  }
+  .errorMsg {
+    color: var(--Tomato);
+    font-size: calc(.8 * var(--Font-size));
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 700;
+    opacity: 0;
+    transition: 300ms;
+  }
+  .errorMsg.show {
+    opacity: 1;
+  }
+  .hero-text form input.invalid {
+    color: var(--Tomato);
+    background-color: rgb(253, 203, 195);
+    border-color: var(--Tomato);
+  }
+  .hero-text form input.invalid::placeholder {
+    color: var(--Tomato);
+  }
+  .hero-text form button, .thanks-msg button {
+    position: relative;
+    background-color: var(--Dark-Slate-Grey);
+    background-size: 100% 400%;
+    background-position: bottom;
+    background-image: linear-gradient(to bottom,rgb(250, 97, 86), rgb(212, 84, 116), var(--Dark-Slate-Grey) 75%);
+    color: var(--White);
+    font-weight: 700;
+    font-size: calc(.9 * var(--Font-size));
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition-speed);
+  }
+  .hero-text form button:hover, .thanks-msg button:hover {
+    background-position: top;
+  }
+  .hero-text form button::before, .thanks-msg button::before {
+    position: absolute;
+    filter: blur(10px);
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent 40%,rgb(250, 97, 86), rgb(212, 84, 116));
+    top: 0;
+    left: 0%;
+    z-index: -1;
+    transform: scale(0) translateY(0%);
+    transform-origin: top;
+    transition: calc(var(--transition-speed) / 1.5);
+  }
+  .hero-text form button:hover::before, .thanks-msg button:hover::before {
+    transform: scale(1) translateY(10%);
+  }
+  .thanks-msg {
+    position: absolute;
+    margin: auto;
+    opacity: 1;
+    z-index: 0;
+    transition: var(--transition-speed);
+    display: flex;
+    height: min(100vh, 400px);
+    width: min(90%, 400px);
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--White);
+    overflow: hidden;
+    border-radius: 2rem;
+    padding: var(--padding) calc(2 * var(--padding));
+  }
+  .thanks-msg.show {
+    opacity: 1;
+    z-index: 1;
+  }
+  .thanks-msg img{
+    width: 50px;
+  }
+  .thanks-msg strong {
+    font-weight: 700;
+  } 
+  .attribution {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  
+  @media (width > 300px) {
+    :root {
+      --padding: 15px;
+    }
+    .hero-text form input, .hero-text form button {
+      padding: 15px;
+    }
+    .thanks-msg {
+      height: min(100vh, 350px);
+    }
+  }
+  @media (width > 450px) {
+    .thanks-msg {
+      height: min(100vh, 300px);
+    }
+  }
+  @media (width > 768px) {
+    :root {
+      --Font-size: 16px;
+    }
+    .container {
+      flex-direction: row-reverse;
+      max-width: 900px;
+      align-items: center;
+      padding: var(--padding);
+    }
+    .hero-image {
+      background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+      width: calc(.6 * min(var(--cont-height), 100vh));
+      height: 100%;
+      align-self: unset;
+    }
+    .thanks-msg {
+      height: min(100vh, 400px);
+    }
+    
+  }

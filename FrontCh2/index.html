@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+
+    <title>Newsletter sign-up form with success message</title>
+
+    <!-- Fonts -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-image"></div>
+      <div class="hero-text">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+         <!-- Sign-up form start -->
+        <form>
+          <label for="email"
+            >Email address
+            <p class="errorMsg">Valid email required</p>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@company.com"
+              autocomplete="none"
+            />
+          </label>
+          <button type="button" id="submitBtn">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+         <!-- Sign-up form end -->
+      </div>
+    </div>
+     <!-- Success message start -->
+    <div class="thanks-msg">
+      <img src="./assets/images/icon-success.svg" alt="Succes Icon" />
+      <h2>Thanks for subscribing!</h2>
+      <p>
+        A confirmation email has been sent to
+        <strong>ash@loremcompany.com</strong>. Please open it and click the
+        button inside to confirm your subscription
+      </p>
+      <button type="button" id="dismissBtn">Dismiss message</button>
+    </div>
+         <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Yunus Emre Salcan</a>
+  </div> 
+  <!--Succes message End-->
+  </body>
+<script src="script.js"></script>
+</html>
