@@ -1,2 +1,2 @@
-[Live](tipcalcappv1.netlify.app)
+[Live](https://tipcalcappv1.netlify.app/)
 ![Alt text](image.png)
