@@ -5,19 +5,7 @@
 
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
 
-## Table of contents
 
-- [Frontend Mentor - Product preview card component solution](#frontend-mentor---product-preview-card-component-solution)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Useful resources](#useful-resources)
-  - [Author](#author)
 
 ## Overview
 
@@ -35,5 +23,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/maudlinmandrake/product-preview-card-component)
+- Solution URL: [Solution](https://github.com/Yemresalcan/Front-End-Mentor/tree/main/FrontCh7)
 - Live Site URL: [Live](https://maudlinmandrake.github.io/product-preview-card-component)
