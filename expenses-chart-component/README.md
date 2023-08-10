@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Yemresalcan/Front-End-Mentor/tree/main/expenses-chart-component)
-- Live Site URL: [Add live site URL here](https://front-end-mentor-yemresalcan.vercel.app/)
+- Solution URL:(https://github.com/Yemresalcan/Front-End-Mentor/tree/main/expenses-chart-component)
+- Live Site URL:(https://front-end-mentor-yemresalcan.vercel.app/)
 
 ## My process
 
@@ -72,10 +72,7 @@ const proudOfThisFunc = () => {
 ```
 
 
-### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 
 ## Author
