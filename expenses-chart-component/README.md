@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:(https://github.com/Yemresalcan/Front-End-Mentor/tree/main/expenses-chart-component)
-- Live Site URL:(https://front-end-mentor-yemresalcan.vercel.app/)
+- [Solution](https://github.com/Yemresalcan/Front-End-Mentor/tree/main/expenses-chart-component)
+- [Live Site URL](https://front-end-mentor-yemresalcan.vercel.app/)
 
 ## My process
 
