@@ -39,8 +39,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
--  [Solution URL](https://github.com/Yemresalcan/Front-End-Mentor/tree/main/intro-section-with-dropdown-navigation-main)
--  [Live Site URL](https://zippy-starburst-15acc3.netlify.app/)
+-  [Solution URL](https://github.com/Yemresalcan/Front-End-Mentor/tree/main/nft-preview-card-component-main)
+-  [Live Site URL](https://nftpreviewfrontendmentor.netlify.app/)
 
 ## My process
 
